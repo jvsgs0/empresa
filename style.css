@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(172, 171, 171);
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "lateral lateral-superior lateral-superior"
+    "lateral lateral-inferior lateral-inferior";
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.header{
+    grid-area: header;
+    width: 100%;
+    background-color: rgb(10, 10, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.lateral{
+    grid-area: lateral;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.lateral-superior{
+    grid-area: lateral-superior;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.lateral-inferior{
+    grid-area: lateral-inferior;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-areas: 
+        "header"
+        "lateral"
+        "lateral-superior"
+        "lateral-inferior";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+a, h1{
+    background-color: rgb(10, 10, 116);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: bold, arial, sans-sherif;
+}
+
+h2{
+    font-size: xx-large;
+    margin: 10px;
+}
+
+h2, img{
+    background-color: gray;
+    font-family: bold, arial, sans-sherif;
+}
+
+img{
+    height: 100%;
+    margin: -50px;
+}
+
+h1{
+    margin-right: 900px;
+    font-size: 50px;
+}
+
+a{
+    margin-left: 10px;
+}
+
+h3{
+    background-color: white;
+}
